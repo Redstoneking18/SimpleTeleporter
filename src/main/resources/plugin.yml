@@ -1,0 +1,13 @@
+name: SimpleTeleporter
+main: main.main
+author: Redstoneking18
+version: 1.0.0
+api: ["1.0.1"]
+description: SimpleTeleporter.
+permissions:
+  simpleteleporter.down:
+    description: "Go up with a Teleporter."
+    default: not op
+  simpleteleporter.up:
+    description: "Go up with a Teleporter."
+    default: not op

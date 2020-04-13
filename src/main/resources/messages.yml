@@ -1,0 +1,7 @@
+prefix: "SimpleTeleporter > "
+
+enable: "Das Plugin Simple-Teleporter wurde aktiviert."
+disable: "Das Plugin Simple-Teleporter wurde deaktiviert."
+notsave: "Der Teleporter ist nicht sicher."
+teleportet: "Du wurdest erfolgreich Teleportiert."
+noteleporter: "Es wurde kein Teleporter gefunden."
