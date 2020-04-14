@@ -7,7 +7,7 @@ description: SimpleTeleporter.
 permissions:
   simpleteleporter.down:
     description: "Go up with a Teleporter."
-    default: not op
+    default: op
   simpleteleporter.up:
     description: "Go up with a Teleporter."
-    default: not op
+    default: op
