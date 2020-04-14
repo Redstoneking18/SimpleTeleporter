@@ -17,7 +17,7 @@ public class Move implements Listener {
     @EventHandler
     public void onMove(PlayerMoveEvent e){
         Player player = e.getPlayer();
-        if(player.hasPermission("simpleteleporter.up")&&player.getLocation().subtract(0, 0.01, 0).getLevelBlock().getId()== Block.DAYLIGHT_DETECTOR&&player.getLocation().add(0, 0, 0).getLevelBlock().getId()== Block.AIR){
+        if(player.hasPermission("simpleteleporter.up")&&player.getLocation().subtract(0, 0.2, 0).getLevelBlock().getId()== Block.DAYLIGHT_DETECTOR&&player.getLocation().add(0, 0, 0).getLevelBlock().getId()== Block.AIR){
             int i = 4;
             /*          player.addEffect(Effect.getEffect(Effect.SLOW_FALLING).setVisible(false).setDuration(5).setAmplifier(10));*/
             while (i < 20) {
