@@ -18,7 +18,7 @@ public class Sneak implements Listener {
                 double pos = i+0.0;
                 if(player.getLocation().subtract(0, pos,0).getLevelBlock().getId()==Block.DAYLIGHT_DETECTOR) {
                     if (player.getLocation().subtract(0, i-1, 0).getLevelBlock().getId() == Block.AIR && player.getLocation().subtract(0, i-2, 0).getLevelBlock().getId() == Block.AIR) {
-                      /*  player.sendMessage(language.getMessage("teleportet"));*/
+                        /*  player.sendMessage(language.getMessage("teleportet"));*/
                         player.teleport(player.getLocation().subtract(0, i, 0));
                     } else {
                         player.sendMessage(language.getMessage("notsave"));
@@ -30,6 +30,6 @@ public class Sneak implements Listener {
                     player.sendMessage(language.getMessage("noteleporter"));
                 }
             }
-        } 
+        }
     }
 }
