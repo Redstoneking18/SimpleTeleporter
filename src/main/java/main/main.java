@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 public class main extends PluginBase {
     private static main instance;
-    ArrayList<Player> Jump;
 
     @Override
     public void onLoad() {
@@ -25,7 +24,7 @@ public class main extends PluginBase {
         language.init();
         this.getLogger().info(language.getMessage("enable"));
         registerCommends();
-        registerListener();
+        registerlistener();
         super.onEnable();
     }
 
@@ -39,26 +38,12 @@ public class main extends PluginBase {
         SimpleCommandMap commandMap = this.getServer().getCommandMap();
     }
 
-    private void registerListener() {
-        PluginManager pm = this.getServer().getPluginManager();
-        pm.registerEvents(new Move(), this);
-        pm.registerEvents(new Sneak(), this);
+    private void registerlistener(){
+        getServer().getPluginManager().registerEvents(new Move(), this);
+        getServer().getPluginManager().registerEvents(new Sneak(), this);
     }
 
     public static main getInstance() {
         return instance;
-    }
-
-    public void addPlayertoJump(Player player) {
-        Jump.add(player);
-    }
-
-    public void removePlayertoJump(Player player) {
-        for(int i = 0; i < Jump.size(); i++) {
-            if(Jump.get(i).equals(player)) {
-                Jump.remove(i);
-                i = Jump.size();
-            }
-        }
     }
 }
