@@ -18,7 +18,7 @@ public class Sneak implements Listener {
        // this.plugin.getServer().getLogger().info("SNEAK");
         if(((!player.isSneaking())&&player.hasPermission("simpleteleporter.down")&&player.getLocation().subtract(0, 0, 0).getLevelBlock().getId()==Block.DAYLIGHT_DETECTOR)){
          //   this.plugin.getServer().getLogger().info("Berechnitung Sneak");
-            int i = 5;
+            int i = 4;
             while (i < 20) {
             //    this.plugin.getServer().getLogger().info("While "+i);
                 double pos = i+0.0;

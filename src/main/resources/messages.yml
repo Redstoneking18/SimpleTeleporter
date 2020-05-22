@@ -1,7 +1,7 @@
 prefix: "SimpleTeleporter > "
 
-enable: "Das Plugin Simple-Teleporter wurde aktiviert."
-disable: "Das Plugin Simple-Teleporter wurde deaktiviert."
-notsave: "Der Teleporter ist nicht sicher."
-teleportet: "Du wurdest erfolgreich Teleportiert."
-noteleporter: "Es wurde kein Teleporter gefunden."
+enable: "The Simple Teleporter plugin has been activated."
+disable: "The Plugin Simple-Teleporter has been disabled."
+notsave: "The teleporter is not secure."
+teleportet:  "You have been successfully teleported."
+noteleporter: "No teleportation was found."
